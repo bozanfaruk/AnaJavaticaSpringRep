@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="prototypeBeanWithConstructor" class="anajavatica.spring.bean.xml.PrototypeBean"
+		init-method="initialize" destroy-method="clear" scope="prototype">
+		<constructor-arg>
+			<ref bean="singletonBean" />
+		</constructor-arg>
+		<constructor-arg name="info" value="Prototype Bean Info" />
+		<property name="numberList">
+			<list>
+				<value>10</value>
+				<value>20</value>
+				<value>30</value>
+			</list>
+		</property>
+		<property name="numberMap">
+			<map>
+				<entry key="One" value="1" />
+				<entry key="Two" value="2" />
+				<entry key="Three" value="3" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="prototypeBeanWithMethod" class="anajavatica.spring.bean.xml.PrototypeBean"
+		init-method="initialize" destroy-method="clear" scope="prototype">
+		<property name="springLogger" ref="singletonBean" />
+	</bean>
+
+	<bean id="singletonBean" class="anajavatica.spring.bean.xml.SpringSysOutLoggerImpl"
+		scope="singleton" />
+
+</beans>
