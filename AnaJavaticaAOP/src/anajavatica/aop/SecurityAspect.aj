@@ -3,6 +3,7 @@ package anajavatica.aop;
 public aspect SecurityAspect {
 
 	private Authenticator authenticator = new Authenticator();
+	private Logger logger = new Logger();
 
 	pointcut secureAccess() : execution(* MessageCommunicator.deliver(..));
 
@@ -11,7 +12,7 @@ public aspect SecurityAspect {
 	}
 
 	after() : secureAccess() {
-		authenticator.authenticate();
+		logger.log("MessageCommunicator.deliver");
 	}
 
 }
