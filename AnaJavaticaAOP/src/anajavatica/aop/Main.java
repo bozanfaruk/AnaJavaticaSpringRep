@@ -4,9 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		MessageCommunicator messageCommunicator = new MessageCommunicator();
-		messageCommunicator.deliver("Wanna learn AspectJ?");
-		messageCommunicator.deliver("Harry", "having fun?");
+		Calculator calculator = new Calculator();
+		calculator.sum(1.2, 3.4);
+		calculator.sum((int) 1, (int) 2);
 
 	}
 
