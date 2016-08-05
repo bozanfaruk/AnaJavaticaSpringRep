@@ -1,6 +1,6 @@
 package anajavatica.aop;
 
-public aspect LoggingAspect {
+public aspect LoggerAspect {
 
 	private Logger logger = new Logger();
 
