@@ -4,10 +4,14 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Calculator calculator = new Calculator();
-		calculator.sum(1.2, 3.4);
-		calculator.sum((int) 1, (int) 2);
+		Car classicCar = new ClassicCar();
+		Car sportCar = new SportCar();
 
+		classicCar.startEngine();
+		System.out.println("Classic car HP: " + classicCar.getHP());
+
+		sportCar.startEngine();
+		System.out.println("Sport car HP: " + sportCar.getHP());
 	}
 
 }

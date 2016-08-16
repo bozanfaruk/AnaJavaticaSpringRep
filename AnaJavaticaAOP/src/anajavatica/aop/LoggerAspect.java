@@ -7,24 +7,14 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class LoggerAspect {
 
-	@Before("execution(public int sum(..))")
-	public void beforeCalculatorIntSum() {
-		log("Before sum of int");
+	@Before("execution(public int anajavatica.aop.Car.getHP(..))")
+	public void loggingBeforeHP() {
+		log("Before HP info...");
 	}
 
-	@After("execution(public int sum(..))")
-	public void afterCalculatorIntSum() {
-		log("After sum of int");
-	}
-
-	@Before("execution(public double sum(..))")
-	public void beforeCalculatorDoubleSum() {
-		log("Before sum of double");
-	}
-
-	@After("execution(public double sum(..))")
-	public void afterCalculatorDoubleSum() {
-		log("After sum of double");
+	@After("execution(public int anajavatica.aop.Car.getHP(..))")
+	public void loggingAfterHP() {
+		log("After HP info...");
 	}
 
 	private void log(String loggingInfo) {
