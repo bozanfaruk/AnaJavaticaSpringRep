@@ -1,5 +1,6 @@
 package anajavatica.spring.bean.xml;
 
+@SuppressWarnings("javadoc")
 public class SpringSysOutLoggerImpl implements SpringLogger {
 
 	@Override

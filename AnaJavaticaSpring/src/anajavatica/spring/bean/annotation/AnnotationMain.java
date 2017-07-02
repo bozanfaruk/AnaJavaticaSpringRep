@@ -2,6 +2,7 @@ package anajavatica.spring.bean.annotation;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+@SuppressWarnings("javadoc")
 public class AnnotationMain {
 
 	public static void main(String[] args) {

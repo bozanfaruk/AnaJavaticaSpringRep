@@ -2,6 +2,7 @@ package anajavatica.spring.bean.annotation.injection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+@SuppressWarnings("javadoc")
 public class Bear {
 
 	@Autowired

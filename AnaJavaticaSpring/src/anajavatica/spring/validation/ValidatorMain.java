@@ -4,6 +4,7 @@ import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
+@SuppressWarnings("javadoc")
 public class ValidatorMain {
 
 	public static void main(String[] args) {

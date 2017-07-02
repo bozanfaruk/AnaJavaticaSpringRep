@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("javadoc")
 public class PrototypeBean {
 
 	private SpringLogger springLogger = null;

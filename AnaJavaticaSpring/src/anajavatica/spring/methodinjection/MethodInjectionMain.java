@@ -3,6 +3,7 @@ package anajavatica.spring.methodinjection;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+@SuppressWarnings("javadoc")
 public class MethodInjectionMain {
 
 	public static void main(String[] args) throws InterruptedException {

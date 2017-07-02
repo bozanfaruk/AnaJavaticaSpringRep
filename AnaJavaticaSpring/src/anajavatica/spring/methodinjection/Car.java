@@ -2,6 +2,7 @@ package anajavatica.spring.methodinjection;
 
 import java.awt.Color;
 
+@SuppressWarnings("javadoc")
 public class Car {
 
 	private Color carColor = null;

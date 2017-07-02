@@ -7,6 +7,7 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 
+@SuppressWarnings("javadoc")
 public class ResourceMain {
 
 	public static void main(String[] args) throws IOException {

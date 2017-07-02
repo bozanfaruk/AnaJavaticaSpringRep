@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
+@SuppressWarnings("javadoc")
 public class AnnotationConfig {
 
 	@Bean(name = "prototypeBean", initMethod = "prototypeInit")

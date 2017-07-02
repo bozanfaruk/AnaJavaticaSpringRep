@@ -1,5 +1,6 @@
 package anajavatica.spring.validation;
 
+@SuppressWarnings("javadoc")
 public class Employee {
 
 	private String id = "";

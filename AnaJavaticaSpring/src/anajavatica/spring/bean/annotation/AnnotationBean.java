@@ -1,5 +1,6 @@
 package anajavatica.spring.bean.annotation;
 
+@SuppressWarnings("javadoc")
 public class AnnotationBean {
 
 	public void sayHello() {

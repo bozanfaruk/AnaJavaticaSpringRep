@@ -1,5 +1,6 @@
 package anajavatica.spring.bean.annotation.injection;
 
+@SuppressWarnings("javadoc")
 public class Honey {
 
 	private String honeyName = "";
